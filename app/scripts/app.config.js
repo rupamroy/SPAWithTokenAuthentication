@@ -4,7 +4,7 @@ angular
 AppConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function AppConfig($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/main');
 
   $stateProvider.state('register', {
     url: '/register',
