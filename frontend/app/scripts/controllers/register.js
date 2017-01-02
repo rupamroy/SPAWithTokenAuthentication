@@ -5,16 +5,18 @@ angular.module('spawithTokenAuthenticationApp')
 
 registerController.$inject = ['$http', 'alert'];
 function registerController($http, alert) {
-  var url = 'http://localhost:9000';
-  var user = {
-    user: this.user,
-    password: this.password
-  };
+  var url = 'http://localhost:3000/register';
+  var user = {};
 
   this.submit = function () {
+    user = {
+      email: this.email,
+      password: this.password
+    };
+
     $http.post(url, user)
       .then(function(){
-        alert('warning', 'Ok!', 'You are now registered');
+        alert('success', 'Ok!', 'You are now registered');
       })
       .catch(function(){
         alert('warning', 'Oops!!', 'Could not register');

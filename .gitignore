@@ -3,6 +3,7 @@
 /frontend/.tmp
 /frontend/.sass-cache
 /frontend/bower_components
+/api/node_modules
 .ideas
 .idea/*
 .idea/**/*
