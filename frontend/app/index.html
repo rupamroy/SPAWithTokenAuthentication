@@ -50,7 +50,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" ng-cloak>
   <div ui-view></div>
   <div class="alert alert-{{alert.type}} animated main-alert"
        ng-class="{'flipInY': alert.show, 'flipOutY' :  !alert.show, 'alert-hidden' : !alert.hasBeenShown}">
